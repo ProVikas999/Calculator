@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    width: 400px;
+    margin: 40px auto;
+    text-align: center;
+    background-color: black;
+    border-radius: 10px;
+    padding: 20px 0;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    animation: fadeIn 0.8s ease-in-out forwards;
+}
+
+h2 {
+    margin-top: 20px;
+    font-size: 28px;
+    color: white;
+}
+
+input[type="text"] {
+    width: 90%;
+    padding: 15px;
+    margin: 15px;
+    font-size: 28px;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    background-color: transparent;
+    color: white;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin: 20px;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    font-size: 24px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+.arithbutton {
+    background-color: #4caf50;
+    color: black;
+}
+
+.arithbutton:hover {
+    background-color: #45a049;
+    color: white;
+}
+
+.primarybutton {
+    background-color: #ff9800;
+}
+
+.primarybutton:hover {
+    color: black;
+    background-color: #e68a00;
+}
+
+/* Button Animation */
+button:hover {
+    animation: buttonHover 0.3s ease-in-out forwards;
+}
+
+@keyframes buttonHover {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Additional Animation */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+/* Add this style at the end of your existing CSS */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 0.8s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
